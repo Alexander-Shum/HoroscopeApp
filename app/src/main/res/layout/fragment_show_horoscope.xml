@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/fragmentHoroscope"
+    tools:context=".ShowHoroscope">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:id="@+id/linearLayoutButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zodiacImage"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="15dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonDay"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="Сегодня"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/buttonWeek"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:text="Неделя"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/buttonMonth"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:text="Месяц"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/zodiacName"
+                android:padding="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/zodiacImage"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/textViewData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zodiacName"
+                android:layout_toEndOf="@+id/zodiacImage"
+                android:layout_alignParentEnd="true"
+                android:padding="20dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/zodiacImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+                android:id="@+id/horoscope"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_below="@id/linearLayoutButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</FrameLayout>
