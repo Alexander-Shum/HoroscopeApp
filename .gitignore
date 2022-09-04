@@ -13,4 +13,5 @@
 .externalNativeBuild
 .cxx
 local.properties
-key_horoscope.jks
+/key_horoscope.jks
+/ShowHoroscope.java
