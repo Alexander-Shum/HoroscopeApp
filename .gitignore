@@ -14,4 +14,4 @@
 .cxx
 local.properties
 /key_horoscope.jks
-\app\src\main\java\com\alex\horoscopeapp\ShowHoroscope.java
+/app/src/main/java/com/alex/horoscopeapp/ShowHoroscope.java
